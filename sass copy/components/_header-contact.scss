@@ -1,6 +1,6 @@
 .contact-list {
     @extend %list;
-    display: none;
+    display: inline-flex;
 }
 .item-email {
     display: flex;

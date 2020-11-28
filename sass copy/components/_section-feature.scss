@@ -2,7 +2,7 @@
     @extend %section;
     padding-bottom: 0;
 
-    & .title-hidden {
+    & h2 {
         @extend %visually-hidden;
         }
     & .container-feature {
@@ -12,11 +12,9 @@
 }
 .feature-list {
     @extend %list;
-    // @extend %grid-list;
+    @extend %grid-list;
       
     & .feature-title {
-        display: block;
-        text-align: center;
         color: $title-text-color;
         font-weight: 700;
         font-size: 14px;
@@ -25,7 +23,7 @@
         text-transform: uppercase;
         
         margin-bottom: 10px;
-}
+    }
     & .feature-description {
         margin-bottom: 0;
         padding-block-start: 3px;
@@ -33,10 +31,9 @@
     }
 }
 .feature-item {
-    // margin-left: 30px;
+    margin-left: 30px;
     /* margin-top: 30px; */
-    // flex-basis: calc(100% / 4 - 30px);
-    margin-bottom: 30px;
+    flex-basis: calc(100% / 4 - 30px);
         
     &::before {
         display: block;

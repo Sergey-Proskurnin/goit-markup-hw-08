@@ -1,0 +1,40 @@
+.section-product {
+    @extend %section;
+}
+.container-product { 
+    @extend %container;
+
+    & .section-title-product {
+        @extend %section-title;
+    }
+}
+.product-list {
+    @extend %list;
+    @extend %grid-list;
+}
+.product-item {
+    margin-left: 30px;
+    /* margin-bottom: 30px; */
+    flex-basis: calc(100% / 3 - 30px);
+}
+.thumb {
+    position: relative;
+    z-index: -1;
+}
+.thumb > .label-product {
+    position: absolute;
+    bottom: 0;
+     
+    margin-bottom: 0;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    background-color:rgba(47, 48, 58, 0.8);
+    
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-top: 27px;
+    line-height: 1.14;
+    color: $primary-white-color;
+}
+  

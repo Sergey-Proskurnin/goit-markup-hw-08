@@ -1,0 +1,80 @@
+.portfolio-title {
+    @extend %visually-hidden;
+}
+.list-portfolio {
+    @extend %list;
+    @extend %grid-list;
+
+    margin-top: -30px;
+    & .link {
+        display: block;
+        text-decoration: none;
+    }
+  }
+.item-portfolio {
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc(100% / 3 - 30px);
+  
+    background-color: $primary-white-color;
+    & .link {
+        transition: 250ms $bezier-page;
+    }
+    & .link:hover,
+    & .link:focus {
+         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+           1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+}
+.item-product {
+    padding: 20px 24px;
+    border-bottom: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+  }  
+.title-portfolio {
+    color: $title-text-color;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    text-decoration: none;
+    letter-spacing: 0.06em;
+  
+    margin-bottom: 4px;
+}
+.category-product {
+    color: $primary-text-color;
+    font-size: 16px;
+    line-height: 1.88;
+  
+    margin-bottom: 0;
+}
+  
+.card-portfolio-overley {
+    position: relative;
+    overflow: hidden;
+}
+.card-description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(33, 150, 243, 0.9);
+    
+    color: $primary-white-color;
+    padding: 63px 24px;
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.56;
+  
+    transform: translatey(100%);
+    transition: transform 250ms $bezier-page;
+    
+    
+}
+.link-overley:hover .card-description,
+.link-overley:focus .card-description {
+    transform: translatey(0);
+}
+  

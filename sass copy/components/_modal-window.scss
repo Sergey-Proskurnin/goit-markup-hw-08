@@ -1,0 +1,65 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    
+    opacity: 1;
+    transition: all 250ms $bezier-page;
+  
+    &.is-hidden {
+        opacity: 0;
+        pointer-events: none;
+    }
+    &.is-hidden .modal {
+        transform: translate(-50%, -50%) scale(1.5);
+        transition: transform 250ms $bezier-page;
+    }
+}  
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    z-index: 2;
+    min-height: 581px;
+    min-width: 528px;
+    /* padding: 15px; */
+  
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+     0px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+  .button-modal {
+    @extend %button;
+
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 8px;
+    right: 8px;
+  
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: $primary-white-color;
+
+    transition: 250ms $bezier-page;    
+  
+//   .icon-close-modal{
+//     fill: #000000;
+//   }
+    &:hover,
+    &:focus { 
+        color: $accent-color;
+    }
+}
+.icon-close-modal{
+    fill: currentColor;
+}

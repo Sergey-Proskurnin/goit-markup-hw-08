@@ -1,13 +1,11 @@
-// .navigation {
-//     // display: flex;
-//     // align-items: center;
-//     // margin-right: auto;
-
-    
-// }
+.navigation {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
 .site-nav {
     @extend %list;
-    display: none;
+    display: inline-flex;
 }
 .site-nav-item {
     position: relative;

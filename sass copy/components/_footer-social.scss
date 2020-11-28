@@ -1,0 +1,26 @@
+.social {
+
+    margin-left: 70px;
+    
+    & .footer-title-social {
+        @extend %footer-title;
+    }
+    & .footer-social-listl {
+        padding-bottom: 0px;
+    }
+}
+.link.social-img-white {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: $primary-white-color;
+  
+    transition: 250ms $bezier-page;
+
+    &:focus,
+    &:hover {
+        background-color: $accent-color;
+    }
+}
+.icon-footer-header {
+    fill: currentColor;
+}
+  
