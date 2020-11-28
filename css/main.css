@@ -1,9 +1,9 @@
-.section-feature, .section-product, .section-comand {
+.section-feature, .section-product, .section-comand, .section-clients {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-.site-nav, .contact-list, .feature-list, .product-list, .comand-list, .social-list {
+.site-nav, .contact-list, .feature-list, .product-list, .comand-list, .social-list, .container-clients .list-clients {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -20,7 +20,7 @@
   overflow: hidden;
 }
 
-.header-container, .section-feature .container-feature, .container-product, .container-comand {
+.header-container, .section-feature .container-feature, .container-product, .container-comand, .container-clients {
   padding-left: 15px;
   padding-right: 15px;
   /* outline: 2px solid tomato; */
@@ -28,19 +28,19 @@
 }
 
 @media screen and (min-width: 480px) {
-  .header-container, .section-feature .container-feature, .container-product, .container-comand {
+  .header-container, .section-feature .container-feature, .container-product, .container-comand, .container-clients {
     width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .header-container, .section-feature .container-feature, .container-product, .container-comand {
+  .header-container, .section-feature .container-feature, .container-product, .container-comand, .container-clients {
     width: 768px;
   }
 }
 
 @media screen and (min-width: 1140px) {
-  .header-container, .section-feature .container-feature, .container-product, .container-comand {
+  .header-container, .section-feature .container-feature, .container-product, .container-comand, .container-clients {
     width: 1140px;
   }
 }
@@ -55,7 +55,7 @@
   border: none;
 }
 
-.product-list {
+.product-list, .container-clients .list-clients {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
@@ -76,7 +76,7 @@
   background-color: #2f303a;
 }
 
-.container-product .section-title-product, .container-comand .section-title-comand {
+.container-product .section-title-product, .container-comand .section-title-comand, .container-clients .section-title-clients {
   color: #212121;
   font-weight: 700;
   font-size: 28px;
@@ -411,6 +411,38 @@ body {
 }
 
 .icon {
+  fill: currentColor;
+}
+
+.container-clients .section-title-clients {
+  margin-bottom: 0px;
+}
+
+.clients-item {
+  margin-left: 30px;
+  flex-basis: calc(100% / 2 - 30px);
+  margin-top: 30px;
+}
+
+.clients-item .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  width: 210px;
+  color: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients-item .link:hover,
+.clients-item .link:focus {
+  border-color: #2196f3;
+  color: #2196f3;
+}
+
+.client-icon {
   fill: currentColor;
 }
 /*# sourceMappingURL=main.css.map */

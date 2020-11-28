@@ -6,23 +6,27 @@
     
     & .section-title-clients {
         @extend %section-title;
+        margin-bottom: 0px;
     }
     & .list-clients {
         @extend %list;
         @extend %grid-list;
+        // margin-top: -30px;
+
+        
     }
 }
 .clients-item {
     margin-left: 30px;
-    flex-basis: calc(100% / 6 - 30px);
-    /* margin-top: 30px; */
+    flex-basis: calc(100% / 2 - 30px);
+    margin-top: 30px;
 
     & .link {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 90px;
-        width: 170px;
+        width: 210px;
         color: #afb1b8;
         border: 1px solid #afb1b8;
         border-radius: 4px;
