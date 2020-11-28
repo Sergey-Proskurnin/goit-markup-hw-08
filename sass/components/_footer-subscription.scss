@@ -1,0 +1,69 @@
+.footer-subscription {
+    margin-left: 93px;
+
+    & .footer-title-subscription {
+        @extend  %footer-title;
+    }
+}
+.form-subscription {
+    display: flex;
+}
+.field-email {
+    width: 358px;
+    height: 50px;
+    margin: 0;
+    display: flex;
+  
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: #2F303A;
+  
+    font-size: 16px;
+    line-height: 1.25;
+    padding-left: 16px;
+    padding-right: 0;
+    letter-spacing: 0.03em;
+    color: $contact-text-color;
+  
+    transition: 250ms $bezier-page;
+    
+    &::placeholder {
+        color: $contact-text-color;
+    }
+}
+.button-subscription {
+    width: 200px;
+    height: 50px;
+    margin-left: 12px;
+    padding: 0;
+      
+    display: flex;
+    align-items: center;
+    padding-left: 29px;
+    
+    border: none;
+    background: $accent-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+  
+    color: $primary-white-color;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.86;
+    letter-spacing: 0.06em;
+  
+    transition: 250ms $bezier-page;
+
+    &:hover,
+    &:focus {
+        background: $primary-white-color;
+        color: $accent-color;
+    }
+
+}
+.icon-subscription {
+    margin-left: 10px;
+    fill: currentColor;
+}

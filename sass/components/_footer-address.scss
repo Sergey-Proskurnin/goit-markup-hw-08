@@ -1,0 +1,33 @@
+.logo-footer {
+    @extend %logo;
+    
+    display: inline-block;
+    color: $primary-white-color;
+  
+    margin-bottom: 20px;
+}
+.footer-address {
+    display: flex;
+  
+    flex-direction: column;
+    font-style: normal;
+    & .link {
+        color: $primary-white-color;
+        text-decoration: none;
+        margin-bottom: 9px;
+        width: max-content;
+    }
+}
+.link-contact.link {
+    color: $contact-text-color;
+  
+    transition: 250ms $bezier-page;
+    &:last-child {
+        margin-bottom: 0px;
+    }
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+  

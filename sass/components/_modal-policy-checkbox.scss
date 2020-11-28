@@ -1,0 +1,49 @@
+.policy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.icon-policy {
+    display: inline-block;
+    min-width: 16px;
+    height: 15px;
+    margin-right: 8px;
+     
+    border: 2px solid #000000;
+    border-radius: 2px;
+}
+
+.checkbox {
+    /* -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute; */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+
+  
+    &:checked + .icon-policy {
+        border-color: transparent;
+        background-color: $accent-color;
+        background-image: url('../images/icon-check.svg');
+        background-size: contain;
+        background-origin: border-box;
+    }
+    &:focus + .icon-policy {
+        border: 2px solid $accent-color;
+        border-radius: 2px;
+    
+        transition: 250ms $bezier-page;
+    } 
+}  
+.agreement{
+    color: $accent-color;
+  
+}

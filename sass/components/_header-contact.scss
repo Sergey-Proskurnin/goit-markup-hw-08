@@ -1,0 +1,35 @@
+.contact-list {
+    @extend %list;
+    display: inline-flex;
+}
+.item-email {
+    display: flex;
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+.link-email-telephon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.link-email-telephon .icon-footer-header {
+    margin-right: 10px;
+}
+.contact-link {
+    color: $primary-text-color;
+    font-weight: 500;
+    line-height: 1.14;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+  
+    transition: 250ms $bezier-page;
+  
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+.icon-footer-header {
+    fill: currentColor;
+}
