@@ -492,7 +492,7 @@ body.modal-open {
   justify-content: center;
   align-items: center;
   height: 90px;
-  width: 210px;
+  max-width: 210px;
   color: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -778,7 +778,7 @@ body.modal-open {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   z-index: 2;
-  min-height: 609px;
+  height: 609px;
   max-width: 450px;
   width: 100%;
   /* padding: 15px; */
