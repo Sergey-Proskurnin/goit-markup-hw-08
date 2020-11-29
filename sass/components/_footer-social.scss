@@ -1,11 +1,12 @@
 .social {
-
-    margin-left: 70px;
+    margin-top: 60px;
+    // margin-left: 70px;
     
     & .footer-title-social {
         @extend %footer-title;
+        text-align: center;
     }
-    & .footer-social-listl {
+    & .footer-social-list {
         padding-bottom: 0px;
     }
 }

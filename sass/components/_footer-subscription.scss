@@ -1,18 +1,25 @@
 .footer-subscription {
-    margin-left: 93px;
+    margin-top: 60px;
+    // margin-left: 93px;
 
     & .footer-title-subscription {
         @extend  %footer-title;
+        text-align: center;
     }
 }
 .form-subscription {
     display: flex;
+    align-items: center;
+    flex-direction: column;
+
+
 }
 .field-email {
-    width: 358px;
+    width: 450px;
     height: 50px;
-    margin: 0;
-    display: flex;
+    margin-bottom: 20px;
+    // margin: 0;
+    // display: flex;
   
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -35,7 +42,7 @@
 .button-subscription {
     width: 200px;
     height: 50px;
-    margin-left: 12px;
+    // margin-left: 12px;
     padding: 0;
       
     display: flex;
