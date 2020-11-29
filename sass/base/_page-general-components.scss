@@ -25,4 +25,8 @@ html {
     letter-spacing: 0.03em;
     font-size: 14px;
     line-height: 1.71;
+
+  }
+  body.modal-open {
+    overflow: hidden;
   }

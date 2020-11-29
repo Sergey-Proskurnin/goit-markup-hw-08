@@ -462,7 +462,8 @@
             </div>
           </div>
           <script src="./js/menu.js"></script>
-        <script>
+          <script src="./js/modal-open-close.js"></script>
+        <!-- <script>
             const refs = {
               openModalBtn: document.querySelector("[data-open-modal]"),
               closeModalBtn: document.querySelector("[data-close-modal]"),
@@ -475,12 +476,14 @@
             refs.backdrop.addEventListener("click", logBackdropClick);
       
             function toggleModal() {
+                document.body.classList.toggle("modal-open");
               refs.backdrop.classList.toggle("is-hidden");
+
             }
       
             function logBackdropClick() {
               console.log("Это клик в бекдроп");
             }
-          </script>
+          </script> -->
     </body>
 </html>
