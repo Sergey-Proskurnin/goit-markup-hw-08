@@ -1,12 +1,21 @@
+.policy-centr {
+    display: block;
+    max-width: 450px;
+    margin-left: 40px;
+    margin-right: 40px;
+    
+}
+// &nbsp;
 .policy {
     display: flex;
     align-items: center;
     justify-content: center;
+    // flex-wrap: wrap;
   
     margin-top: 20px;
 
     font-size: 12px;
-    line-height: 1.17px;
+    line-height: 1.17;
 }
 .icon-policy {
     display: inline-block;
@@ -47,6 +56,7 @@
         transition: 250ms $bezier-page;
     } 
 }  
+
 .agreement{
     color: $accent-color;
   

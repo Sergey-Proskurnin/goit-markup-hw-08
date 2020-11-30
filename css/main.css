@@ -783,7 +783,6 @@ body.modal-open {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   z-index: 2;
-  height: 609px;
   max-width: 450px;
   width: 100%;
   /* padding: 15px; */
@@ -821,8 +820,6 @@ body.modal-open {
   text-align: center;
   margin-bottom: 12px;
   width: 370px;
-  margin-left: auto;
-  margin-right: auto;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.5;
@@ -903,6 +900,7 @@ body.modal-open {
 .button-modal-form {
   display: block;
   margin-top: 30px;
+  margin-bottom: 60px;
   margin-right: auto;
   margin-left: auto;
   width: 200px;
@@ -917,13 +915,20 @@ body.modal-open {
   border: 1px solid #2196f3;
 }
 
+.policy-centr {
+  display: block;
+  max-width: 450px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
 .policy {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 20px;
   font-size: 12px;
-  line-height: 1.17px;
+  line-height: 1.17;
 }
 
 .icon-policy {
