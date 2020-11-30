@@ -9,13 +9,14 @@
 }
 .form-subscription {
     display: flex;
-    align-items: center;
+    // align-items: center;
     flex-direction: column;
 
-
+    max-width: 450px;
 }
 .field-email {
-    width: 450px;
+    display: block;
+    max-width: 450px;
     height: 50px;
     margin-bottom: 20px;
     // margin: 0;
@@ -29,7 +30,7 @@
     font-size: 16px;
     line-height: 1.25;
     padding-left: 16px;
-    padding-right: 0;
+    // padding-right: 0;
     letter-spacing: 0.03em;
     color: $contact-text-color;
   
@@ -39,6 +40,11 @@
         color: $contact-text-color;
     }
 }
+.button-subscription-center {
+display: flex;
+justify-content: center;
+}
+
 .button-subscription {
     width: 200px;
     height: 50px;
@@ -68,7 +74,6 @@
         background: $primary-white-color;
         color: $accent-color;
     }
-
 }
 .icon-subscription {
     margin-left: 10px;
