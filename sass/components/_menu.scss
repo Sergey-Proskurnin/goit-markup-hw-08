@@ -12,6 +12,9 @@
     &:focus {
       color: $accent-color;
     }
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
   }
   .icon-menu,
   .icon-close-menu {
@@ -34,8 +37,14 @@
     padding-top: 60px;
     padding-bottom: 60px;
     text-align: center;
-    font-size: 20px;
     z-index: 999;
+
+    @media screen and (min-width: 768px) {
+      padding-top: 0px;
+      padding-bottom: 0px;
+      z-index: 0;
+
+    }  
 
   
     @media screen and (max-width: 767px) {
@@ -49,4 +58,12 @@
         display: block;
       }
    }
+   @media screen and (min-width: 768px) {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     
+
+    }
+
   }
