@@ -7,6 +7,7 @@
       
       & .section-title-comand {
         @extend %section-title;
+        margin-bottom: 30px;
       }
 }
 .comand-list{
@@ -26,6 +27,12 @@
         margin-top: 30px;
         margin-bottom: 10px;
     }
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -30px;
+      margin-top: -30px;
+    }
 }
 .comand-item {
     text-align: center;
@@ -33,6 +40,10 @@
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+      width: 354px;    
+  }
 
     &:last-child {
       margin-bottom: 0px;
@@ -45,5 +56,11 @@
     & .comand-position {
     margin-bottom: 16px;
     }
+    @media screen and (min-width: 768px) {
+      margin-left: 30px;
+      margin-top: 30px; 
+      flex-basis: calc(100% / 2 - 30px);
+      margin-bottom: 0;
+  }
 }
   
