@@ -7,10 +7,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  
-  
-  
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
   }
+  .icon-menu,
+  .icon-close-menu {
+    fill: currentColor;
+  }
+
   .menu-button .icon-close-menu {
     display: none;
   }

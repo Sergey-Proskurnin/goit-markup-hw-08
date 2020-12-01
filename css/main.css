@@ -147,6 +147,15 @@ body.modal-open {
   align-items: center;
 }
 
+.menu-button:hover, .menu-button:focus {
+  color: #2196f3;
+}
+
+.icon-menu,
+.icon-close-menu {
+  fill: currentColor;
+}
+
 .menu-button .icon-close-menu {
   display: none;
 }
