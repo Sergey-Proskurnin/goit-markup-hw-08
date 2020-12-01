@@ -1,31 +1,34 @@
 .navigation {
     display: flex;
     align-items: center;
-    margin-right: auto;
-
-
+    // margin-right: auto;
     justify-content: space-between;
-    min-height: 80px;
+    // min-height: 80px;
 }    
 
 .site-nav {
     @extend %list;
-    display: none;
+    display: block;
+    margin-bottom: 60px;
 }
 .site-nav-item {
-    position: relative;
-    
+    // position: relative;
+    line-height: 1;
+        
     &:not(:last-child) {
-      margin-right: 50px;
+    //   margin-right: 50px;
+    margin-bottom: 52px;
+        
     }
 }  
 .menu-link {
     color: $title-text-color;
     font-weight: 500;
-    line-height: 1.14;
+    // line-height: 1.14;
     text-decoration: none;
     letter-spacing: 0.02em;
     /* position: relative; */
+    position: relative;
     transition: 250ms $bezier-page;
       
     &.current {
@@ -44,8 +47,12 @@
     width: 100%;
     height: 4px;
     position: absolute;
+    // background-position: center;
     /* bottom: -31.85px; */
-    bottom: -28.5px;
+    // bottom: -28.5px;
+    bottom: -8px;
+    right: 0px;
+
    
     background-color: $accent-color;
     border-radius: 2px;

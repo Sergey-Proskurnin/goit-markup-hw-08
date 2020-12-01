@@ -16,14 +16,26 @@
         <div class="container header-container">
             <nav class="navigation">
                 <a href="./index.html" class="logo"><span class="logo-accent">Web</span>Studio</a>
-                <ul class="site-nav list">
+                <button
+                    type="button"
+                    class="menu-button"
+                    data-menu-button
+                    aria-controls="menu-container"
+                    aria-expanded="false">
+
+                    <svg width="24" height="24" aria-label="Переключатель мобильного меню" >
+                        <use class="icon-menu" href="./images/sprite.svg#menu"></use>
+                        <use class="icon-close-menu" href="./images/sprite.svg#close-menu"></use>
+                    </svg>
+                </button>
+                <div class="menu-container" id="menu-container" data-menu>
+                    <ul class="site-nav list">
                     <li class="site-nav-item"><a href="./index.html" class="link menu-link">Студия</a></li>
                     <li class="site-nav-item"><a href="./portfolio.html" target="_blank" class="link menu-link current">Портфолио</a></li>
                     <li class="site-nav-item"><a href="#contacts" class="link menu-link">Контакты</a></li>
-                </ul>
-            </nav>
-            <!--header-contact-->
-            <ul class="contact-list list">
+                    </ul>
+                <!--header-contact-->
+                    <ul class="contact-list list">
                 <li class="item-email">
                     <a href="mailto:info@devstudio.com" class="contact-link link-email-telephon">
                         <svg class="icon-footer-header" width="16" height="12">
@@ -40,7 +52,9 @@
                         <div>+38 096 111 11 11</div>
                     </a>
                 </li>
-            </ul>
+                    </ul>
+                </div>
+            </nav>
         </div>
     </header>
     <!--main-content-portfolio-->
@@ -228,16 +242,19 @@
                 <b class="footer-title footer-title-subscription">Подпишитесь на рассылку</b>
                 <form  class="form-subscription" autocomplete="off" action="#">
                     <input class="field-email" type="email" name="email" placeholder="E-mail">
-                    <button class="button-subscription" type="submit">Подписаться
-                        <svg class="icon-subscription" width= "24" height="24">
-                            <use href="./images/sprite.svg#send"></use>
-                        </svg> 
-                    </button>
+                    <div class="button-subscription-center">
+                        <button class="button-subscription" type="submit">Подписаться
+                            <svg class="icon-subscription" width= "24" height="24">
+                                <use href="./images/sprite.svg#send"></use>
+                            </svg> 
+                        </button>
+                    </div>
 
 
                 </form>
             </div>
         </div>
         </footer>
+        <script src="./js/menu.js"></script>
 </body>
 </html>
