@@ -152,6 +152,13 @@ body.modal-open {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
 .menu-button {
   border: none;
   background-color: transparent;
@@ -225,6 +232,12 @@ body.modal-open {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .menu-container {
+    align-items: baseline;
+  }
+}
+
 .logo-accent {
   color: #2196f3;
 }
@@ -254,6 +267,12 @@ body.modal-open {
     justify-content: center;
     margin-bottom: 0px;
     margin-right: 84px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .site-nav {
+    margin-right: 305px;
   }
 }
 
@@ -309,6 +328,13 @@ body.modal-open {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .current::after {
+    bottom: -31px;
+    background-position: center;
+  }
+}
+
 .contact-list {
   display: flex;
   flex-direction: column;
@@ -322,12 +348,29 @@ body.modal-open {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .contact-list {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 .item-email {
   display: flex;
 }
 
 .item-email:not(:last-child) {
   margin-bottom: 16px;
+}
+
+@media screen and (min-width: 1200px) {
+  .item-email:not(:last-child) {
+    margin-bottom: 0px;
+  }
+  .item-email:not(:last-child):not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .link-email-telephon {
