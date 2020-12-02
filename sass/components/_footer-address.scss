@@ -4,6 +4,7 @@
     }
     @media screen and (min-width: 768px) {
         width: max-content;
+    }
 }
 .logo-footer {
     @extend %logo;
@@ -13,6 +14,9 @@
     color: $primary-white-color;
   
     margin-bottom: 20px;
+    @media screen and (min-width: 768px) {
+        text-align: start;
+    }
 }
 .footer-address {
     // display: block;
@@ -21,6 +25,11 @@
     align-items: center;
     flex-direction: column;
     font-style: normal;
+    
+    @media screen and (min-width: 768px) {
+        align-items: flex-start;
+    }
+
     & .link {
         color: $primary-white-color;
         text-decoration: none;

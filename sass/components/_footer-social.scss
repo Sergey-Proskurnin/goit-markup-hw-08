@@ -5,12 +5,19 @@
         margin-top: 0px;
         width: 369px;
     }
-    // margin-left: 70px;
+    @media screen and (min-width: 1200px) {
+        width: max-content;
+        margin-left: 70px;
+    }
+    // 
     
     & .footer-title-social {
         @extend %footer-title;
         text-align: center;
-    }
+        
+        @media screen and (min-width: 1200px) {}
+            text-align: start;
+        }
     & .footer-social-list {
         padding-bottom: 0px;
     }

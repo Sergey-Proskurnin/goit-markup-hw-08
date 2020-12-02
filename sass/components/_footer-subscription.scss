@@ -5,27 +5,46 @@
         margin-left: auto;
         margin-right: auto;
     }
-    // margin-left: 93px;
+    @media screen and (min-width: 1200px) {
+        width: max-content;
+        margin-left: 93px;
+        margin-right: 0px;
+        margin-top: 0px;
+    }
+
 
     & .footer-title-subscription {
         @extend  %footer-title;
         text-align: center;
+        
+        @media screen and (min-width: 1200px) {
+            text-align: start;
+        }
     }
 }
 .form-subscription {
     display: flex;
-    // align-items: center;
     flex-direction: column;
 
     max-width: 450px;
+    @media screen and (min-width: 1200px) {
+        align-items: center;
+        flex-direction: row;
+    }
 }
 .field-email {
     display: block;
     max-width: 450px;
     height: 50px;
     margin-bottom: 20px;
-    // margin: 0;
-    // display: flex;
+
+    @media screen and (min-width: 1200px) {
+        margin: 0;
+        min-width: 358px;
+        display: flex;
+    }
+
+    
   
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -53,9 +72,12 @@ justify-content: center;
 .button-subscription {
     width: 200px;
     height: 50px;
-    // margin-left: 12px;
+    
     padding: 0;
-      
+    @media screen and (min-width: 1200px) {
+        margin-left: 12px;
+    }
+    
     display: flex;
     align-items: center;
     padding-left: 29px;
