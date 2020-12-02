@@ -2,6 +2,8 @@
     @media screen and (min-width: 768px) {
         width: 369px;
     }
+    @media screen and (min-width: 768px) {
+        width: max-content;
 }
 .logo-footer {
     @extend %logo;
