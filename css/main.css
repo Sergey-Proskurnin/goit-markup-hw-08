@@ -1178,6 +1178,13 @@ body.modal-open {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-width: 528px;
+    min-height: 581px;
+  }
+}
+
 .button-modal {
   position: absolute;
   display: flex;
@@ -1207,10 +1214,19 @@ body.modal-open {
   text-align: center;
   margin-bottom: 12px;
   width: 370px;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.5;
   color: #212121;
+}
+
+@media screen and (min-width: 1200px) {
+  .form-title {
+    line-height: 1.15;
+    width: max-content;
+  }
 }
 
 .position-icon {
@@ -1316,6 +1332,13 @@ body.modal-open {
   margin-top: 20px;
   font-size: 12px;
   line-height: 1.17;
+}
+
+@media screen and (min-width: 1200px) {
+  .policy {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .icon-policy {
