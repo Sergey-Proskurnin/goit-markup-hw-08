@@ -776,7 +776,7 @@ body.modal-open {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .adress-item {
     width: max-content;
   }
@@ -789,7 +789,7 @@ body.modal-open {
   margin-bottom: 20px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .logo-footer {
     text-align: start;
   }
@@ -802,7 +802,7 @@ body.modal-open {
   font-style: normal;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .footer-address {
     align-items: flex-start;
   }
@@ -848,7 +848,12 @@ body.modal-open {
 
 .social .footer-title-social {
   text-align: center;
-  text-align: start;
+}
+
+@media screen and (min-width: 1200px) {
+  .social .footer-title-social {
+    text-align: start;
+  }
 }
 
 .social .footer-social-list {
@@ -1051,6 +1056,12 @@ body.modal-open {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .item-portfolio {
+    flex-basis: calc(100% / 3 - 30px);
+  }
+}
+
 .item-portfolio .link {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1070,6 +1081,12 @@ body.modal-open {
 @media screen and (min-width: 768px) {
   .item-product {
     max-width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .item-product {
+    max-width: none;
   }
 }
 

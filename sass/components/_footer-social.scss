@@ -15,12 +15,14 @@
         @extend %footer-title;
         text-align: center;
         
-        @media screen and (min-width: 1200px) {}
+        @media screen and (min-width: 1200px) {
             text-align: start;
         }
+    }    
     & .footer-social-list {
         padding-bottom: 0px;
     }
+
 }
 .link.social-img-white {
     background-color: rgba(255, 255, 255, 0.1);

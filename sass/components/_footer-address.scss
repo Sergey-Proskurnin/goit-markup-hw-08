@@ -2,7 +2,7 @@
     @media screen and (min-width: 768px) {
         width: 369px;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1200px) {
         width: max-content;
     }
 }
@@ -14,7 +14,7 @@
     color: $primary-white-color;
   
     margin-bottom: 20px;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1200px) {
         text-align: start;
     }
 }
@@ -26,7 +26,7 @@
     flex-direction: column;
     font-style: normal;
     
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1200px) {
         align-items: flex-start;
     }
 
