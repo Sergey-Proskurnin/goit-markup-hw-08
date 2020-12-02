@@ -17,7 +17,7 @@
          
     & .feature-title {
         display: block;
-        text-align: center;
+        text-align: start;
         color: $title-text-color;
         font-weight: 700;
         font-size: 14px;
@@ -37,8 +37,10 @@
         flex-wrap: wrap;
         margin-left: -30px;
         margin-top: -30px;
-
-
+    }
+    @media screen and (min-width: 1200px) {
+        margin-top: 0px;
+       
     }
 }
 .feature-item {
@@ -64,14 +66,23 @@
     
 
         @media screen and (min-width: 768px) {
-            width: 354px;    
+            // width: 354px;    
         }
+        @media screen and (min-width: 1200px) {
+            // width: 270px;    
+        }
+
     }
     @media screen and (min-width: 768px) {
         margin-left: 30px;
         margin-top: 30px; 
         flex-basis: calc(100% / 2 - 30px);
         margin-bottom: 0;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-top: 0px;
+        flex-basis: calc(100% / 4 - 30px)
+
     }
 }
   

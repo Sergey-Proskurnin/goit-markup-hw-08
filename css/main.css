@@ -47,9 +47,9 @@
   }
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1200px) {
   .header-container, .section-feature .container-feature, .container-product, .container-comand, .container-clients, .footer-сontainer, .container-portfolio {
-    width: 1140px;
+    width: 1200px;
   }
 }
 
@@ -453,7 +453,7 @@ body.modal-open {
 
 .feature-list .feature-title {
   display: block;
-  text-align: center;
+  text-align: start;
   color: #212121;
   font-weight: 700;
   font-size: 14px;
@@ -475,6 +475,12 @@ body.modal-open {
     flex-wrap: wrap;
     margin-left: -30px;
     margin-top: -30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .feature-list {
+    margin-top: 0px;
   }
 }
 
@@ -500,17 +506,18 @@ body.modal-open {
 }
 
 @media screen and (min-width: 768px) {
-  .feature-item::before {
-    width: 354px;
-  }
-}
-
-@media screen and (min-width: 768px) {
   .feature-item {
     margin-left: 30px;
     margin-top: 30px;
     flex-basis: calc(100% / 2 - 30px);
     margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .feature-item {
+    margin-top: 0px;
+    flex-basis: calc(100% / 4 - 30px);
   }
 }
 
