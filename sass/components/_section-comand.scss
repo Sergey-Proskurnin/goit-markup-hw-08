@@ -23,6 +23,7 @@
     & .title-comand-name {
         color: $title-text-color;
         font-weight: 500;
+        font-size: 16px;
     
         margin-top: 30px;
         margin-bottom: 10px;
@@ -33,6 +34,10 @@
       margin-left: -30px;
       margin-top: -30px;
     }
+    @media screen and (min-width: 1200px) {
+      margin-top: 0px;
+    }
+
 }
 .comand-item {
     text-align: center;
@@ -61,6 +66,10 @@
       margin-top: 30px; 
       flex-basis: calc(100% / 2 - 30px);
       margin-bottom: 0;
+  }
+    @media screen and (min-width: 1200px) {
+      margin-top: 0px;
+      flex-basis: calc(100% / 4 - 30px);
   }
 }
   
