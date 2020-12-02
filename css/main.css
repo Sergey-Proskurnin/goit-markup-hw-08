@@ -451,6 +451,12 @@ body.modal-open {
   color: #2196f3;
 }
 
+@media screen and (min-width: 1200px) {
+  .section-feature {
+    padding-bottom: 0px;
+  }
+}
+
 .feature-list .feature-title {
   display: block;
   text-align: start;
@@ -539,6 +545,12 @@ body.modal-open {
 
 .section-product {
   display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-product {
+    display: block;
+  }
 }
 
 .product-item {

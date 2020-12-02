@@ -4,13 +4,13 @@
       
     & .title-hidden {
         @extend %visually-hidden;
-        }
+    }
     & .container-feature {
         @extend %container;
     }
-    
-
-        
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 0px;
+    }
 }
 .feature-list {
     @extend %list;

@@ -1,6 +1,9 @@
 .section-product {
     display: none;
     @extend %section;
+    @media screen and (min-width: 1200px) {
+        display: block;
+    }
 }
 .container-product { 
     @extend %container;
