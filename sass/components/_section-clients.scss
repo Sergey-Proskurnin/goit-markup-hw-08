@@ -17,10 +17,6 @@
         @extend %grid-list;
         // margin-top: -30px;
     }
-    
-
-        
-    
 }
 .clients-item {
     margin-left: 30px;
@@ -49,6 +45,10 @@
         @media screen and (min-width: 768px) {
             max-width: 226px;    
         }
+        @media screen and (min-width: 1200px) {
+            width: 170px;    
+        }
+
     }
     & .link:hover,
     & .link:focus {
