@@ -1097,7 +1097,7 @@ body.modal-open {
 }
 
 .item-botton:last-child {
-  margin-right: 0;
+  margin-right: 0px;
 }
 
 @media screen and (min-width: 1200px) {
